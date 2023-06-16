@@ -36,7 +36,7 @@ const errorHandler = (err, req, res, next) => {
     default:
       console.log("No Error , All good");
   }
-  res.json({ message: err.message, stackTrace: err.stack });
+  // res.json({ message: err.message, stackTrace: err.stack });
 };
 
 module.exports = errorHandler;
